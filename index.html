@@ -17,28 +17,30 @@
         <h3>Generate a Password</h3>
       </div>
       <div class="card-body">
-        <div id="Numbers">
-          <input type="checkbox" id="charset-0" />
+        <div id="numbers">
+          <input type="checkbox" id="charset-0" checked />
           <label for="charset-0"> Numbers<small>(0123456789)</small></label>
         </div>
-        <div id="Lowercase">
-          <input type="checkbox" id="charset-1" />
+        <div id="lowercase">
+          <input type="checkbox" id="charset-1" checked/>
           <label for="charset-1"> Lowercase <small>(abcdefghijklmnopqrstuvwxyz)</small></label>
         </div>
-        <div id="Uppercase">
-          <input type="checkbox" id="charset-2" />
+        <div id= "uppercase" >
+          <input type="checkbox" id="charset-2" checked />
           <label for="charset-2"> Uppercase <small>(ABCDEFGHIJKLMNOPQRSTUVWXYZ)</small></label>
         </div>
-        <div id= "" >
-          <input type="checkbox" id="charset-3" />
-          <label for="charset-3"> ASCII symbols <small>(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~)</small></label>
+        <div id= "special" >
+          <input type="checkbox" id="charset-3" checked/>
+          <label for="charset-3"> Special <small>(!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~)</small></label>
         </div>
         <div>
           <label for="length"> Length: </label>
-          <input type="text" name="type" id="length" checked="checked" value="20" /> characters
+          <input type="number" name="type" id="length" checked="checked"  /> characters
         </div>
         <div>
-          <button id="generate" class="btn" onclick="generatePassword(); return false;">Generate Password</button>
+          <button id="generate" class="btn">
+            Generate Password
+          </button>
           <h4 id="password"></h4>
         </div>
       </div>
